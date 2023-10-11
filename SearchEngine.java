@@ -36,9 +36,11 @@ class Handler implements URLHandler {
         if (url.getPath().equals("/add")) {
             String[] parameters = url.getQuery().split("=");
             if (parameters[0].equals("s")) {
-                searches = addString(numSearches, searches, parameters[1]);
+                searches = addString(numSearches, searches, parameters[1].toString());
                 numSearches++;
                 return String.format("%s added to searchable strings! The number of strings is now %d!", parameters[1], numSearches);
+            } else {
+                return "Unable to add string!";
             }
         } else if (url.getPath().equals("/search")) {
             String[] parameters = url.getQuery().split("=");
@@ -47,6 +49,8 @@ class Handler implements URLHandler {
                     return findStrings(searches, parameters[1]);
                 else
                     return "Search not found!";
+            } else {
+                return "Unable to return string!";
             }
         } else if (url.getPath().equals("/")) {
             String strings = "";
@@ -57,8 +61,9 @@ class Handler implements URLHandler {
                     strings = strings + ", " + searches[i];
             }
             return String.format("Current list of searchable strings: %s", strings);
+        } else {
+            return "404 Not Found!";
         }
-        return "404 Not Found!";
     }
 }
 
