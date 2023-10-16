@@ -2,7 +2,7 @@
 ---
 
 ## Part 1
-Code for 
+Code for `StringServer`:
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -44,3 +44,5 @@ class StringServer {
     }
 }
 ```
+First time using /add-message:\
+![First screenshot using /add-message](images/add-message1.png)
