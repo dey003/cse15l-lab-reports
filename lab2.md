@@ -52,3 +52,6 @@ The `handleRequest` method was called, taking in the server's URI as its argumen
 Second time using `/add-message`:\
 ![Second screenshot using /add-message](images/add-message2.png)\
 The `handleRequest` method was called again, with the URI as its argument. `num` and `str` are still the relevant fields, with `num` now being 1 and `str` being the previously concatenated string. After the second `/add-message` request, `num` increases again to 2 and `str` concatenates the previous string with the new `num` and the new given string.
+
+---
+## Part 2
