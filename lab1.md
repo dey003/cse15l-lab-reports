@@ -5,7 +5,12 @@
 [user@sahara ~]$ cd
 [user@sahara ~]$
 ```
-The working directory was `/home` both before and after running the command. This is because the `cd` command changes directories, but with no arguments, `cd` does not have a directory to change to, so it stays in the same directory. This output is not an error.
+The working directory was `/home` both before and after running the command. It appears as though the `cd` command, which changes directories, did not do anything because it was not given a directory to change to. However, this is not the case, as we can see in another example:
+```
+[user@sahara ~/lecture1]$ cd
+[user@sahara ~]$
+```
+Here, the working directory was `/home/lecture1` before the command and `/home` after the command. This reveals the function of `cd` with no argument, which is to change to the home directory. This output is not an error.
 
 ---
 **`cd` with a directory as an argument:**
