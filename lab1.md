@@ -68,6 +68,8 @@ clear
 ```
 The working directory was `/home`. The `cat` command normally prints the text inside a file, but when no arguments are given, it repeats whatever you type into the terminal until you end the command by using the keyboard shortcut `ctrl+d`. In this example, I typed "input" and "clear", which the `cat` command repeated, before ending the command using `ctrl+d`. This output is not an error.
 
+Note: The usual keyboard shortcut to end a command is `ctrl+c`, but in this case, `ctrl+d` also worked for me. The difference between these shortcuts seems to be complicated, but [this website](https://dev.to/konkit/obvious-and-not-so-obvious-bash-zsh-terminal-shortcuts-3480) provides a basic explanation, stating that `ctrl+c` ends the current running process, while `ctrl+d` signals the end of a file.
+
 ---
 **`cat` with a directory as an argument:**
 ```
