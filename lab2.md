@@ -56,10 +56,10 @@ The `handleRequest` method was called again, with the URI as its argument. `num`
 ---
 ## Part 2
 Path to the private key:\
-![Screenshot of private key](images/private_key.png)\
+![Screenshot of private key](images/private_key.png)
 
 Path to the public key:\
-![Screenshot of public key](images/public_key.png)\
+![Screenshot of public key](images/public_key.png)
 
 Logging in without a password:\
 ![Screenshot of login](images/ssh_login.png)
