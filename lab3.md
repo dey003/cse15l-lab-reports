@@ -2,7 +2,7 @@
 ---
 
 ## Part 1
-I am testing the `filter` method in `ListExamples`. The associated code for the tests is:
+I'm testing the `filter` method in `ListExamples`. The associated code for the tests is:
 ```
 import static org.junit.Assert.*;
 import org.junit.*;
@@ -53,4 +53,37 @@ An input that does not induce an error is:
     }
 ```
 
-I used a bash script called `listtest.sh` to run the tests.
+I'm using a bash script called `listtest.sh` to run the tests. The output of the tests being run is:
+![Screenshot of test output](lab3images/list_test.png)\
+This output shows the symptom that the order in which we expect the strings to be in is the opposite of what they actually are in.
+
+Before the bug is fixed:
+```
+  static List<String> filter(List<String> list, StringChecker sc) {
+    List<String> result = new ArrayList<>();
+    for(String s: list) {
+      if(sc.checkString(s)) {
+        result.add(0, s);
+      }
+    }
+    return result;
+  }
+```
+
+After the bug is fixed:
+```
+  static List<String> filter(List<String> list, StringChecker sc) {
+    List<String> result = new ArrayList<>();
+    for(String s: list) {
+      if(sc.checkString(s)) {
+        result.add(s);
+      }
+    }
+    return result;
+  }
+```
+
+The bug is in the line where the string is added to the result. In the original version, the string is added to index 0 of the list, but we want it to add the string to the end of the list, keeping the same order as the original list. We can fix this by removing the first input in the `add` method.
+
+---
+## Part 2
