@@ -87,3 +87,23 @@ The bug is in the line where the string is added to the result. In the original 
 
 ---
 ## Part 2
+
+I'm researching the command-line options for `grep`. I used the `git help grep` command in VS Code to learn about the options for `grep`.
+
+### -r
+This option means to use `grep` recursively on the subdirectories as well as the current directory.
+```
+devan@DevanHP MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
+$ grep -r "science" technical
+technical/911report/chapter-13.1.txt:                all-source analysis, and advanced science and technology.
+technical/911report/chapter-13.4.txt:                1987, Sufaat received a bachelor's degree in biological sciences, with a minor in
+technical/911report/chapter-2.txt:                satisfy its own conscience and justify its existence."
+technical/911report/chapter-2.txt:                humanities and social sciences. Many of these young men, even if able to study
+technical/biomed/1471-2105-1-1.txt:        biological sciences, and moves toward the 
+technical/biomed/1471-2105-1-1.txt:        methods of systems science need to be used to analyze,
+technical/biomed/1471-2105-3-22.txt:          manufacturer (Amersham Biosciences, Piscataway, NJ).
+technical/biomed/1471-2121-4-3.txt:          Hybond N+ membrane (Amersham Biosciences) by capillary
+technical/biomed/1471-213X-1-1.txt:        (Polysciences) resin and sectioned at 10 μm. Sections were
+technical/biomed/1471-213X-1-6.txt:        contribution to the body of science, and partly is a common
+...
+```
