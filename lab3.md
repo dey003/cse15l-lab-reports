@@ -107,3 +107,12 @@ technical/biomed/1471-213X-1-1.txt:        (Polysciences) resin and sectioned at
 technical/biomed/1471-213X-1-6.txt:        contribution to the body of science, and partly is a common
 ...
 ```
+Here, `grep` searches within the subdirectories of the `technical` directory, finding files in `911report`, `biomed`, `government` (not shown), and `plos` (not shown).
+
+```
+devan@DevanHP MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
+$ grep -r "FOREWORD" technical/government
+technical/government/About_LSC/Comments_on_semiannual.txt:FOREWORD
+technical/government/Gen_Account_Office/Statements_Feb28-1997_volume.txt:FOREWORD
+```
+In this case, `grep` is searching each subdirectory within the `technical/government` directory, finding files in `About_LSC` and `Gen_Account_Office`.
