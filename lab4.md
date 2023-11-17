@@ -13,6 +13,8 @@ I ran the `ssh` command to log into the ieng6 remote server.
 *Key presses*: `git clone <ctrl+v><enter>` [^1]
 [^1]: `<ctrl+v>` denotes holding `<ctrl>` and pressing `v` at the same time. From here on out, this will be the meaning of key presses written in the format `<special-character+key>`.
 
+I copied the `SSH` URL to my clipboard, so I pasted it using `<ctrl+v>` into the `git clone` command.
+
 ---
 ### Step 6: Run the tests, demonstrating that they fail
 ![Step 6 screenshot](lab4images/step6.png)\
