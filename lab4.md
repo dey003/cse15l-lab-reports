@@ -2,18 +2,25 @@
 ---
 
 ### Step 4: Log into ieng6
+![Step 4 screenshot](lab4images/step4.png)\
 
 ---
 ### Step 5: Clone your fork of the repository from your Github account (using the `SSH` URL)
+![Step 5 screenshot](lab4images/step5.png)\
 
 ---
 ### Step 6: Run the tests, demonstrating that they fail
+![Step 6 screenshot](lab4images/step6.png)\
 
 ---
 ### Step 7: Edit the code file to fix the failing test
+![Step 7 first screenshot](lab4images/step7part1.png)\
+![Step 7 second screenshot](lab4images/step7part2.png)\
 
 ---
 ### Step 8: Run the tests, demonstrating that they now succeed
+![Step 8 screenshot](lab4images/step8.png)\
 
 ---
 ### Step 9: Commit and push the resulting change to your Github account (you can pick any commit message!)
+![Step 9 screenshot](lab4images/step9.png)\
