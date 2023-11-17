@@ -13,11 +13,14 @@ I ran the `ssh` command to log into the ieng6 remote server.
 *Key presses*: `git clone <ctrl+v><enter>` [^1]
 [^1]: `<ctrl+v>` denotes holding `<ctrl>` and pressing `v` at the same time. From here on out, this will be the meaning of key presses written in the format `<special-character+key>`.
 
-I copied the `SSH` URL to my clipboard, so I pasted it using `<ctrl+v>` into the `git clone` command.
+I copied the `lab7` repository's `SSH` URL to my clipboard, so I pasted it using `<ctrl+v>` into the `git clone` command.
 
 ---
 ### Step 6: Run the tests, demonstrating that they fail
 ![Step 6 screenshot](lab4images/step6.png)\
+*Key presses*: `cd lab7<enter>bash test.sh<enter>`
+
+I used the `cd` command to enter the `lab7` directory and the `bash` command to run the tests.
 
 ---
 ### Step 7: Edit the code file to fix the failing test
