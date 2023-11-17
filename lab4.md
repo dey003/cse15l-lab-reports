@@ -42,3 +42,6 @@ The `bash test.sh` command run in step 6 was 2 up in the search history, so I pr
 ---
 ### Step 9: Commit and push the resulting change to your Github account (you can pick any commit message!)
 ![Step 9 screenshot](lab4images/step9.png)\
+*Key presses*: `git add <tab><enter>git commit -m "Edited ListExamples.java"<enter>git push`
+
+I used the `git add` command on `ListExamples.java` to add it to the next commit. `<tab>` autocompletes `ListExamples.java` because it is the only changed file, and thus the only file to be added. Next, I ran the `git commit` command, using `-m` to add the commit message "Edited ListExamples.java". Finally, I used the `git push` command to push the commit to GitHub.
