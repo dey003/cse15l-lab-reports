@@ -35,6 +35,9 @@ The second part of this step was done by `44<shift+g>er2:wq!<enter>`. Here, I wa
 ---
 ### Step 8: Run the tests, demonstrating that they now succeed
 ![Step 8 screenshot](lab4images/step8.png)\
+*Key presses*: `<up><up><enter>`
+
+The `bash test.sh` command run in step 6 was 2 up in the search history, so I pressed `<up>` twice to reuse it.
 
 ---
 ### Step 9: Commit and push the resulting change to your Github account (you can pick any commit message!)
