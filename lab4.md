@@ -24,8 +24,10 @@ I used the `cd` command to enter the `lab7` directory and the `bash` command to 
 
 ---
 ### Step 7: Edit the code file to fix the failing test
-![Step 7 first screenshot](lab4images/step7part1.png)\
+![Step 7 first screenshot](lab4images/step7part1.png) [^2]\
 ![Step 7 second screenshot](lab4images/step7part2.png)\
+*Key presses*: `vim L<tab>.j<tab><enter>44<shift+g>er2:wq!<enter>`
+[^2]: You may notice that the ieng6 command counter went from 95 in step 6 to 97 here. Here and going forward, skips in the command counter are a result of me running extra commands to verify that I'm doing the steps correctly and checking on the status of files. These commands aren't necessary to perform the procedure.
 
 ---
 ### Step 8: Run the tests, demonstrating that they now succeed
