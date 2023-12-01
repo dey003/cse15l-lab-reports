@@ -2,12 +2,14 @@
 ---
 
 ## Original Post
-"Hello, I'm having trouble with a bug in my grading script. From the error message, I can tell it has something to do with my JUnit tests, but my JUnit files are clearly in the `lib` folder! Is something wrong with the extra test I wrote? Here is my code for `TestListExamples.java` and `grade.sh`:"\
+![Screenshot of terminal output](lab5images/output.txt)
+"Hello, I'm having trouble with a bug in my grading script. From the error message, I can tell it has something to do with my JUnit tests, but my JUnit files are clearly in the `lib` folder! I also made sure that the path I used works for Windows, which is what I'm using. Is something wrong with the extra test I wrote? Here is my code for `TestListExamples.java` and `grade.sh`:"\
 **Code given here* (see code in "Information" section)\
 "I would appreciate any help. Thanks!"
 
 ---
 ## TA Response
+"From what I can tell, there is nothing wrong with your `TestListExamples.java` file. Try examining your `grade.sh` script closely, specifically the part where you enter the `grading-area` directory to give a grade. Think about what happens when you change directories, and how it changes things related to your JUnit files. Hope this helps!"
 
 ---
 ## Student Response
