@@ -14,7 +14,10 @@
 ## Information
 
 ### File Structure
-The file structure is an updated version of the `list-examples-grader` GitHub repository we used in the Week 6 and Week 9 Lab, which can be seen [here](https://github.com/ucsd-cse15l-s23/list-examples-grader/tree/main). `GradeServer.java` and `Server.java` are unchanged.
+The file structure is the same as that of the `list-examples-grader` GitHub repository we used in the Week 6 and Week 9 Lab, which can be seen [here](https://github.com/ucsd-cse15l-s23/list-examples-grader/tree/main).
+
+### File Contents
+`GradeServer.java` and `Server.java` are unchanged.
 
 `TestListExamples.java` has been edited, adding another `StringChecker` and a test for the `filter` method:
 ```
@@ -106,3 +109,7 @@ else
     echo "Grade: 100"
 fi
 ```
+
+### Bug-Triggering Command
+The bug is triggered when running the Bash script on a sample GitHub repository using the command:\
+`bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-lab3`
