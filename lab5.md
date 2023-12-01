@@ -13,6 +13,9 @@
 
 ---
 ## Student Response
+"Ohhh, I see! Since I moved into the `grading-area` directory, my `CPATH` no longer led to the `lib` folder. I fixed the bug by changing line 21:"\
+![Screenshot of old vs. new line](edited_line.png)\
+"Thanks so much for your help!"
 
 ---
 ## Information
@@ -118,8 +121,8 @@ The bug is triggered when running the Bash script on a sample GitHub repository 
 `bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-lab3`
 
 ### How to Fix the Bug
-We can see from the error output that the bug is related to running the JUnit tests. The bug occurs as a result of the need to move into the `grading-area` directory, as done in line 96 with the command:\
+We can see from the error output that the bug is related to running the JUnit tests. The bug occurs as a result of the need to move into the `grading-area` directory, as done in line 32 with the command:\
 `cd grading-area`.\
-Now, the `CPATH` relative path for the JUnit files is no longer valid because we are in a directory that does not contain the `lib` directory. To fix this, we can edit line 85 to be:\
+Now, the `CPATH` relative path for the JUnit files is no longer valid because we are in a directory that does not contain the `lib` directory. To fix this, we can edit line 21 to be:\
 `cp -r student-submission/ListExamples.java TestListExamples.java GradeServer.java Server.java lib grading-area`.\
 We add the `lib` directory to be copied into `grading-area`, as well as the `-r` option for the `cp` command to recursively copy all files within `lib`. This makes `CPATH` a valid path to find the required JUnit files, fixing the bug.
