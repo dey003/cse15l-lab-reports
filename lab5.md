@@ -2,7 +2,9 @@
 ---
 
 ## Original Post
-
+"Hello, I'm having trouble with a bug in my grading script. From the error message, I can tell it has something to do with my JUnit tests, but my JUnit files are clearly in the `lib` folder! Is something wrong with the extra test I wrote? Here is my code for `TestListExamples.java` and `grade.sh`:"\
+**Code given here* (see code in "Information" section)\
+"I would appreciate any help. Thanks!"
 
 ---
 ## TA Response
