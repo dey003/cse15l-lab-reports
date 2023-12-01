@@ -126,3 +126,7 @@ We can see from the error output that the bug is related to running the JUnit te
 Now, the `CPATH` relative path for the JUnit files is no longer valid because we are in a directory that does not contain the `lib` directory. To fix this, we can edit line 21 to be:\
 `cp -r student-submission/ListExamples.java TestListExamples.java GradeServer.java Server.java lib grading-area`.\
 We add the `lib` directory to be copied into `grading-area`, as well as the `-r` option for the `cp` command to recursively copy all files within `lib`. This makes `CPATH` a valid path to find the required JUnit files, fixing the bug.
+
+---
+## Reflection
+In lab for the second half of this quarter, I have learned how to use Vim to view and edit files directly from the command line, as well as using terminal commands to commit files to GitHub. Using these skills, I can do so many things just from the command line if I have to. I started this course having almost never used the terminal before, so it's cool to see how much we have covered in such a short time.
