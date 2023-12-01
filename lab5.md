@@ -13,8 +13,8 @@
 
 ---
 ## Student Response
-"Ohhh, I see! Since I moved into the `grading-area` directory, my `CPATH` no longer led to the `lib` folder. I fixed the bug by changing line 21:"\
-![Screenshot of old vs. new line](edited_line.png)\
+"Ohhh, I see! Since I moved into the `grading-area` directory, my `CPATH` no longer led to the `lib` folder. I fixed the bug by changing line 21 to also copy the `lib` directory into `grading-area`:"\
+![Screenshot of old vs. new line](lab5images/edited_line.png)\
 "Thanks so much for your help!"
 
 ---
