@@ -1,5 +1,6 @@
 # Lab Report 5
 ---
+## Part 1: Debugging Scenario
 
 ## Original Post
 ![Screenshot of terminal output](lab5images/terminal_output.png)\
@@ -128,5 +129,5 @@ Now, the `CPATH` relative path for the JUnit files is no longer valid because we
 We add the `lib` directory to be copied into `grading-area`, as well as the `-r` option for the `cp` command to recursively copy all files within `lib`. This makes `CPATH` a valid path to find the required JUnit files, fixing the bug.
 
 ---
-## Reflection
+## Part 2: Reflection
 In lab for the second half of this quarter, I have learned how to use Vim to view and edit files directly from the command line, as well as using terminal commands to commit files to GitHub. Using these skills, I can do so many things just from the command line if I have to. I started this course having almost never used the terminal before, so it's cool to see how much we have covered in such a short time.
